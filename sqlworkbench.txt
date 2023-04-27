@@ -1,0 +1,36 @@
+download sql workbench
+install and login
+
+select * from city
+(keyword --clause(from where etc) ;-for multiple quiries no need if single)
+(clause-from,where)
+commentis -- /**/for multiple comments
+
+CREATE DATABASE ModelDB;
+USE modeldb;
+CREATE TABLE Students(AdmnNo int,FirstName Varchar(255),Department varchar(255));
+insert into Students Values(100,"jo","CSE");
+INSERT INTO Students(AdmnNo,FirstName,Department) VALUES(101,"RAM","ECE");
+INSERT INTO Students(AdmnNo,FirstName,Department) VALUES(101,"RAM","ECE"),(101,"RAM","ECE"),(101,"RAM","ECE");
+SELECT * from students;
+SELECT * From Students ORDER BY Department
+SELECT AdmnNo as admission from Students ORDER BY Department;
+SELECT AdmnNo,FirstName from Students ORDER BY Department;
+SELECT * from Students WHERE Department="CSE";
+Drop table Students;
+
+SET SQL_SAFE_UPDATES =0;
+Delete from Students where Department="CSE";
+select * from Students;
+Rename Students to StudentsModelEngg;
+select * from StudentsModelEngg;
+UPDATE StudentsModelEngg SET FirstName="Text" WHERE AdmnNO="101";
+select * from StudentsModelEngg;
+alter table StudentsModelEngg add Phone int;
+select * from StudentsModelEngg;
+UPDATE StudentsModelEngg SET Phone-234335 WHERE AdmnNo=90);
+CREATE TABLE Students(AdmnNo int NOT Null, FirstName Varchar(255),Department varchar(255));
+INSERT into Students(FirstName,Department) varchar(255));
+SELECT * FROM Students;
+
+
